@@ -1,20 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Page</title>
+
+    <style>
+        #experience table,
+        #experience table th,
+        #experience table td,
+        #education table,
+        #education table th,
+        #education table td {
+            border: 2px solid black;
+        }
+    </style>
 </head>
+
 <body>
-    <!--header starts here-->
+    <!--Header Starts Here-->
     <header>
         <h1>John Doe</h1>
-        <h3>Full Stack Developer | Web Designer | Tech Enthusiast</h3>
+        <p>Full Stack Developer | Web Designer | Tech Enthusiast</p>
         <hr>
 
-        <h1>About Me</h1>
-        <h3>I am a passionate developer with 5+ years of experience in building web applications. I specialize in HTML, CSS, JavaScript and backend technologies.</h3>
+        <section aria-label="about me">
+            <h2>About Me</h2>
+            <p>I am a passionate developer with 5+ years of experience in building web applications. I specialize in
+                HTML, CSS, JavaScript and backend technologies.</p>
+        </section>
     </header>
-    <!--header starts here-->
+    <hr>
+    <!--Header Ends Here-->
+
+    <main>
+        <!-- Skills Section Starts Here-->
+        <section id=" skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HMTL5 & CSS3</li>
+                <li>JavaScript</li>
+                <li>React & Vue.js</li>
+                <li>Node.js & Express</li>
+                <li>MongoDB & MySQL</li>
+                <li>Git & Github</li>
+            </ul>
+        </section>
+        <hr>
+        <!-- Skills Section Ends Here-->
+
+        <!--Experience Section Starts Here -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <table>
+                <caption>Work Experience</caption>
+                <thead>
+                    <tr>
+                        <th>Position</th>
+                        <th>Company</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Senior Developer</td>
+                        <td>Tech Solutions Inc.</td>
+                        <td>2021-Present</td>
+                    </tr>
+                    <tr>
+                        <td>Web Developer</td>
+                        <td>Digital Innovations</td>
+                        <td>2019-2021</td>
+                    </tr>
+                    <tr>
+                        <td>Junior Developer</td>
+                        <td>StartUp Co.</td>
+                        <td>2018-2019</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+        <!--Experience Section Ends Here -->
+
+        <!--Projects Section Starts Here -->
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <article id="project-1">
+                <h3>Projet 1: E-Commerce Website</h3>
+                <p>Built a fully functional e-commerce platform with product listings, cart management, and payment
+                    integration.</p>
+
+                <ul>
+                    <li> <strong>Technologies:</strong> React, Node.js, MongoDB </li>
+                    <li> <strong>Timeline:</strong> 6 months </li>
+                </ul>
+            </article>
+
+            <article id="project-2">
+                <h3>Projet 2: Blog Platform</h3>
+                <p> Developed a blogging platform with user authentication and content management features.</p>
+
+                <ul>
+                    <li> <strong>Technologies:</strong>HTML, CSS, JavaScript, Express </li>
+                    <li> <strong>Timeline:</strong> 3 months </li>
+                </ul>
+            </article>
+        </section>
+        <hr>
+        <!--Projects Section Ends Here -->
+
+        <!--Education Section Starts Here -->
+        <section id="education">
+            <h2>Education</h2>
+            <table>
+                <caption>My Education</caption>
+                <thead>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td> Bachelors in computer science </td>
+                        <td> State University </td>
+                        <td> 2018. </td>
+                    </tr>
+                    <tr>
+                        <td> Web Development Boot Camp </td>
+                        <td> Online Academy</td>
+                        <td> 2017 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--Education Section Ends Here -->
+    </main>
+    <hr>
+
+    <!--footer starts here -->
+    <footer>
+        <h2>Contact</h2>
+
+        <address>
+            <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+            <p>Phone: <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+            <p>Location: New York, USA</p>
+        </address>
+        <hr>
+
+        <p>
+            <small>© 2026 John Doe. All rights reserved.</small>
+        </p>
+    </footer>
+    <!--footer ends here -->
+
 </body>
+
 </html>
