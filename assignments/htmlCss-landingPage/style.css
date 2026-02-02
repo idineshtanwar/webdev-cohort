@@ -1,5 +1,165 @@
+/* color*/
+:root {
+    --primary-color: #14120b;
+    --secondary-color: #1b1913;
+    --text-color: #edecec;
+    --color-black: #14120b;
+}
+
+/*font*/
+@font-face {
+    font-family: "CursorGothic";
+    src: url("assets/fonts/CursorGothic-Regular.woff2") format("woff2");
+    font-weight: 900;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--text-color);
+    font-family: "CursorGothic";
 }
+
+/*start*/
+body {
+    background-color: var(--primary-color);
+    /* background-color: bisque; */
+}
+
+/* header start*/
+header {
+    width: 100vw;
+    height: 52px;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+
+    nav {
+        width: 1300px;
+        height: 52px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #navBrand {
+            width: 13%;
+
+            svg {
+                width: 95.75px;
+            }
+        }
+
+        #navLink {
+            width: 27%;
+            display: flex;
+            justify-content: space-around;
+
+            li {
+                list-style-type: none;
+
+                a {
+                    text-decoration: none;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        #navCTA {
+            width: 13%;
+
+            a {
+                border: 0.1px solid grey;
+                font-size: 14px;
+                text-decoration: none;
+                border-radius: 50px;
+                margin: auto 2px;
+            }
+
+            #navCTA-1 {
+                padding: 4px 10px;
+            }
+
+            #navCTA-2 {
+                padding: 6px 10px;
+                color: var(--color-black);
+                background-color: white;
+            }
+        }
+    }
+}
+
+/* header end*/
+
+/* main start*/
+main {
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: 160px;
+
+    #hero {
+        width: 100%;
+
+        h1 {
+            font-size: 25px;
+
+        }
+
+        button {
+            color: var(--color-black);
+            border-radius: 50px;
+            font-size: 16px;
+            margin-top: 22.4px;
+            padding: 11px 22px;
+
+            span {
+                color: black;
+            }
+        }
+
+        #img {
+            width: 100%;
+            margin-top: 62px;
+
+            img {
+                width: 100%;
+                border-radius: 7px;
+            }
+        }
+    }
+
+    #logo {
+        width: 100%;
+        /* margin-top: 50px; */
+        padding: 50px 0;
+        text-align: center;
+
+        h2 {
+            font-size: 14px;
+        }
+
+        #img-section {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+
+            div {
+                width: 12%;
+                height: 100px;
+                border-radius: 10px;
+                background-color: var(--secondary-color);
+                display: flex;
+                justify-content: center;
+                border: 0.01px solid rgb(31, 31, 14);
+                
+                img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+/* main end*/
