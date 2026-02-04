@@ -1,0 +1,167 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* common class */
+.grey-text{
+  color: lab(100% 0 0/.7);
+}
+
+.green-text{
+  color:lab(79.9844% -59.6292 22.5096) ;
+}
+
+.lightButton{
+  color: lab(2.42579% -.165291 -.470081);
+  background-color: lab(100% 0 0);
+  border-radius: 30px;
+  padding: 4.5px 12px;
+}
+
+
+
+body{
+  a{
+    text-decoration: none;
+  }
+  svg{
+  width: 30px;
+}
+}
+
+
+
+
+
+
+
+
+/* footer start  */
+footer{
+  background: #0d0f0f;
+  color: #aaa;
+  padding: 60px 80px;
+  font-family: system-ui, sans-serif;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #222;
+  margin: 40px 0;
+}
+
+/* TOP BAR */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.logo-dot {
+  width: 14px;
+  height: 14px;
+  background: #00d084;
+  border-radius: 50%;
+}
+
+.footer-socials a {
+  color: #aaa;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.footer-socials a:hover {
+  color: #fff;
+}
+
+/* GRID */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 60px;
+}
+
+.footer-column h2 {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 16px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 12px;
+}
+
+.footer-column a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column a:hover {
+  color: #fff;
+}
+
+/* BOTTOM BAR */
+.footer-bottom {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background: #00d084;
+  border-radius: 50%;
+}
+
+.footer-security {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.badge {
+  border: 1px solid #333;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #999;
+}
+
+.footer-copy {
+  text-align: right;
+  font-size: 13px;
+  color: #777;
+}
